@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/fraunces-144pt-s000?styles=80449,80450,80444');
+
+:root{
+    --clr-primary-100: hsla(273, 85%, 13%, 1);
+    --clr-primary-200: hsla(0, 0%, 100%, 1);
+    --clr-secondary: hsla(274, 100%, 99%, 1);
+    --clr-accent-100:hsla(150, 100%, 63%, 1);
+    --clr-accent-200: hsla(271, 12%, 34%, 1);
+    --fw-regular: 400;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+    --fs-heading-900: 8rem;
+    --fs-heading-800: 5.6rem;
+    --fs-heading-700:3.2rem;
+    --fs-body: 1.8rem;
+    --fs-button:1.8rem;
+    --line-height-heading: 8rem;
+    --line-height-text: 3.2rem;
+    
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+h1,h2,h3{
+    font-family: 'Fraunces 144pt S000', sans-serif;
+    font-weight: var(--fw-semi-bold);
+}
+
+
+img{
+    max-width: 100%;
+}
+
+button{
+    border: none;
+    font-family: 'Manrope', sans-serif;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-button);
+}
+
+.container{
+  padding-left: 16.5rem;
+  padding-right: 16.5rem;
+  max-width: 1440px;
+  margin: 0 auto;
+
+}
+    
+html{
+     overflow-x: hidden;
+     font-size: 62.5%;
+}
+    
+body{
+    font-family: 'Manrope', sans-serif;
+    font-size: var(--fs-body);
+ 
+
+}
+
+header{
+    background-color: var(--clr-primary-100);
+    border-radius: 2000%/  0 0 100% 100%; 
+    
+}
+
+header .bg-pattern-1{
+    position: absolute;
+    top:116.12px;
+    left:-139px;
+}
+
+header .bg-pattern-2{
+    position: absolute;
+    right: -48px;
+    top:314px;
+}
+
+
+header .container{
+    padding-top: 5.78rem;
+    max-height: 730px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav button{
+    background: none;
+    color: var(--clr-primary-200);
+    border-bottom: 3px var(--clr-accent-100) solid;
+    font-weight: var(--fw-bold);
+}
+
+nav button:hover{
+    color: var(--clr-accent-100);
+    cursor: pointer;
+}
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 5.5rem;
+    gap:3.7rem;
+    
+}
+
+.banner-heading{
+    font-size: var(--fs-heading-900);
+    color: var(--clr-secondary);
+    max-width: 63rem;
+    text-align: center;
+    line-height: var(--line-height-heading);
+    
+}
+
+.banner-heading span{
+    border-bottom: 4px solid var(--clr-accent-100);
+    
+}
+
+.cta-button{
+    background-color: var(--clr-accent-100);
+    width: 16.1rem;
+    height: 6.1rem;
+}
+
+.banner-button:hover{
+    color: var(--clr-accent-100);
+    background: none;
+    border: 2px solid var(--clr-accent-100);
+    cursor: pointer;
+}
+
+.banner .image-hero{
+    margin-top: 5rem;
+    max-width: 70rem;
+    transform: translateX(6%);
+}
+
+/* main section */
+
+main{
+    background-color: var(--clr-secondary);
+    border-radius: 2000%/  0 0 100% 100%; 
+}
+
+
+main .container{
+    display: flex;
+    gap: 2.6rem;
+    text-align: center;
+    padding-top: 25rem;
+    padding-bottom: 17.1rem;
+    
+}
+
+.service-number{
+    color: var(--clr-primary-100);
+    font-family: 'Fraunces 144pt S000', sans-serif;
+    font-size: 2.4rem;
+    font-weight: var(--fw-semi-bold);
+    border-radius: 30px;
+    border: 1px solid var(--clr-primary-100);
+    min-width: 56px;
+    min-height: 56px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.service-tittle{
+    font-size: var(--fs-heading-700);
+    font-weight: var(--fw-semi-bold);
+    padding-bottom: 2.8rem;
+    padding-top: 5.6rem;
+}
+
+.service-text{
+    color:  var(--clr-accent-200);
+    font-weight: var(--fw-regular);
+    line-height: var(--line-height-text);
+    
+}
+
+/* footer section */
+
+footer .container{
+    display: flex;
+    padding-top: 28.3rem;
+    padding-bottom: 12.2rem;
+    
+}
+
+.image-founder{
+   z-index: -1;
+   margin-top: -130px;
+   transform: translateX(20%);
+  
+}
+
+.founder{
+    background-color: var(--clr-primary-100);
+    height: 100%;
+    padding: 6.4rem;
+ 
+}
+
+.founder-tittle{
+    color: var(--clr-primary-200);
+    font-size: var(--fs-heading-800);
+    font-weight: var(--fw-semi-bold);
+    padding-bottom: 3.2rem;
+}
+
+.founder-description{
+    color: var(--clr-primary-200);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-regular);
+    line-height: var(--line-height-text);
+    padding-bottom: 3.2rem;
+    
+}
+
+.founder .cta-button{
+    width: 19rem;
+    height: 6rem;
+}
+
+
+
+
+@media only screen and (max-width: 1200px) {
+
+    :root{
+        --fs-heading-900: 6rem;
+        --fs-heading-800: 4.8rem;
+        --fs-heading-700: 2.8rem;
+        --fs-body: 1.6rem;
+        --fs-button:1.6rem;
+        --line-height-heading: 6rem;
+        --line-height-text: 2.8rem;
+        
+    }
+
+    .container{
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+
+    header .container{
+        max-height: 54rem;
+        padding-top: 3.2rem;
+    }
+
+
+    .banner-heading{
+        max-width: 48rem;
+    }
+
+    .banner .image-hero{
+        max-width: 47rem;
+        margin-top: 3rem;
+    }
+
+    header .bg-pattern-1{
+        position: absolute;
+        top: 116.12px;
+        left: -220px;
+    }
+
+    header .bg-pattern-2{
+        position: absolute;
+        right: -100px;
+        top: 314px;
+    }
+
+    .cta-button{
+        width: 13.3rem;
+        height: 5.5rem;
+    }
+
+    main .container{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding-top: 20rem;
+       
+    }
+
+    .services{
+        display: flex;
+        align-items: center;
+        gap: 1.7rem;
+    }
+
+    .service-tittle{
+        padding-top: 0;
+        padding-bottom: 1.6rem;
+    }
+
+    .service-number{
+        width: 48px;
+        height: 48px;
+        margin-top: 30px;
+        
+    }
+
+    .service-text{
+        max-width: 70rem;
+    }
+
+    footer .container{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .image-founder{
+        z-index: -1;
+        margin-top: -130px;
+        transform: translateX(20%);
+       
+     }
+  
+
+    .founder{
+        padding: 5.6rem;
+    }
+
+    .founder-tittle{
+        padding-bottom: 2.4rem;
+    }
+
+    .founder-description{
+        padding-bottom: 2.4rem;
+    }
+
+    .founder .cta-button{
+        width: 17.2rem;
+        height: 5.5rem;
+    }
+    
+
+
+}
+
+
+@media only screen and (max-width: 700px) {
+
+    :root{
+        --fs-heading-900: 5rem;
+        --fs-heading-800: 3.2rem;
+        --fs-heading-700: 2.8rem;
+        --fs-body: 1.6rem;
+        --fs-button:1.6rem;
+        --line-height-heading: 5rem;
+        --line-height-text: 2.8rem;
+        
+    }
+
+    .container{
+        padding-left: 1.6rem;
+        padding-right: 1.6rem;
+    }
+
+    .banner{
+        margin-top: 6.6rem;
+    }
+
+    header .container{
+        max-height: 48rem;
+        padding-top: 3.2rem;
+    }
+
+
+    .banner-heading{
+        max-width: 40rem;
+    }
+
+    .banner .image-hero{
+        max-width: 27rem;
+        margin-top: 4rem;
+    }
+
+    header .bg-pattern-1{
+        display: none;
+    }
+
+    header .bg-pattern-2{
+        display: none;
+    }
+
+    main .container{
+        display: flex;
+        text-align: center;
+        gap:4rem;
+        padding-top: 15rem;
+    }
+
+    .services{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.4rem;
+    }
+
+    .service-tittle{
+        padding-top: 0;
+        padding-bottom: 1.6rem;
+    }
+
+    .service-number{
+        width: 48px;
+        height: 48px;
+        margin-top: 0;
+        font-size: 2rem;
+        
+    }
+
+    footer .container{
+        flex-direction: column;
+        padding-left: 3.2rem;
+        padding-right: 3.2rem;
+        padding-top: 9rem;
+    }
+
+    .image-founder{
+        z-index: -1;
+        margin-top: 0;
+        margin: 0 auto;
+        transform: translateX(0);
+        transform: translateY(20%);
+        max-width: 281px;
+       
+     }
+  
+
+    .founder{
+        padding: 5.6rem;
+        text-align: center;
+    }
+
+    .founder-tittle{
+        padding-bottom: 1.6rem;
+    }
+
+    .founder-description{
+        padding-bottom: 2.4rem;
+    }
+}
