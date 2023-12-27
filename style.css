@@ -56,6 +56,7 @@ button{
 html{
      overflow-x: hidden;
      font-size: 62.5%;
+     box-sizing: border-box;
 }
     
 body{
@@ -63,20 +64,23 @@ body{
     font-size: var(--fs-body);
     width: 100vw;
     min-height: 100vh;
- 
+    position: relative;
+    overflow-x: hidden;
+    
 
 }
 
 header{
     background-color: var(--clr-primary-100);
     border-radius: 2000%/  0 0 100% 100%; 
-    
+   
 }
 
 header .bg-pattern-1{
     position: absolute;
     top:116.12px;
     left:-139px;
+    
 }
 
 header .bg-pattern-2{
@@ -85,6 +89,7 @@ header .bg-pattern-2{
     right: 0;
     transform: translateX(28%);
     top:314px;
+    
 }
 
 
