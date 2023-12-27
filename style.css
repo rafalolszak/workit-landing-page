@@ -61,6 +61,8 @@ html{
 body{
     font-family: 'Manrope', sans-serif;
     font-size: var(--fs-body);
+    width: 100vw;
+    min-height: 100vh;
  
 
 }
@@ -79,7 +81,9 @@ header .bg-pattern-1{
 
 header .bg-pattern-2{
     position: absolute;
-    right: -48px;
+    /* right: -48px; */
+    right: 0;
+    transform: translateX(28%);
     top:314px;
 }
 
@@ -136,7 +140,7 @@ nav button:hover{
     height: 6.1rem;
 }
 
-.banner-button:hover{
+.cta-button:hover{
     color: var(--clr-accent-100);
     background: none;
     border: 2px solid var(--clr-accent-100);
@@ -197,6 +201,10 @@ main .container{
 
 /* footer section */
 
+footer{
+    padding-bottom: 11rem;
+}
+
 footer .container{
     display: flex;
     padding-top: 28.3rem;
@@ -215,6 +223,7 @@ footer .container{
     background-color: var(--clr-primary-100);
     height: 100%;
     padding: 6.4rem;
+    position: relative;
  
 }
 
@@ -239,6 +248,29 @@ footer .container{
     height: 6rem;
 }
 
+.founder .bg-pattern-3{
+    position: absolute;
+    right:72px;
+    bottom: -60px;
+    
+}
+
+.logo-footer{
+   text-align: center;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+    gap:2.5rem;
+    margin-top: 6rem;
+    
+}
+
+.social-icons img:hover{
+    color: var(--clr-primary-100);
+    cursor: pointer;
+}
 
 
 
@@ -283,8 +315,9 @@ footer .container{
 
     header .bg-pattern-2{
         position: absolute;
-        right: -100px;
+        right: 0;
         top: 314px;
+        transform: translateX(35%);
     }
 
     .cta-button{
@@ -337,6 +370,7 @@ footer .container{
 
     .founder{
         padding: 5.6rem;
+       
     }
 
     .founder-tittle{
@@ -351,13 +385,20 @@ footer .container{
         width: 17.2rem;
         height: 5.5rem;
     }
+
+    .founder .bg-pattern-3{
+        position: absolute;
+        right:10px;
+        bottom: -110px;
+        
+    }
     
 
 
 }
 
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 760px) {
 
     :root{
         --fs-heading-900: 5rem;
@@ -429,6 +470,11 @@ footer .container{
         
     }
 
+    footer{
+        padding-bottom: 6rem;
+    }
+    
+
     footer .container{
         flex-direction: column;
         padding-left: 3.2rem;
@@ -459,4 +505,10 @@ footer .container{
     .founder-description{
         padding-bottom: 2.4rem;
     }
+
+    .founder .bg-pattern-3{
+        display: none;
+        
+    }
+    
 }
